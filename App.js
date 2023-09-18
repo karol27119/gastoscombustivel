@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Pressable, TextInput, ImageBackground } from 'react-native';
 import { useCallback, useState } from 'react';
 
 export default function App() {
@@ -25,6 +25,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <ImageBackground>
       <Text style={styles.titulo}>Autonomia do Ganho de Combustível</Text>
       <View>
         <Text style={styles.valores}>Valor do litro</Text>
@@ -54,6 +55,7 @@ export default function App() {
       <Text>{" "}</Text>
         <Text style={styles.caixresult}>{resultado}</Text>
       </View>
+      </ImageBackground>
     </View>
   );
 }
